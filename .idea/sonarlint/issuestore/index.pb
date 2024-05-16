@@ -11,3 +11,7 @@ n
 >src/main/java/com/github/JoseAngelGiron/PrimaryController.java,4\4\446d19e13dc005fdbbea8013c0f756eaee785e8e
 p
 @src/main/java/com/github/JoseAngelGiron/SecondaryController.java,0\3\03a8c19c5ab3b5e84269814243648c7d2a442613
+k
+;src/main/java/com/github/JoseAngelGiron/DistanciaCrane.java,d\f\dfca2464532cdd47b5ff5b5e74fa9757980c9e7b
+r
+Bsrc/main/java/com/github/JoseAngelGiron/TransportistaCarteros.java,a\a\aa4c1e41bd8487e3c00ef34c56c26c683b7a1a17
