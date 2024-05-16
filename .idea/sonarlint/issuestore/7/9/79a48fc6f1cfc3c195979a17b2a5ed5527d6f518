@@ -1,6 +1,6 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µΠπ8¬όγγυ1
-G
-java:S1068"%Remove this unused "x" private field.(ΠΗρόÿÿÿÿ8Ίόγγυ1
-G
-java:S1068"%Remove this unused "y" private field.(Κ€Δψÿÿÿÿ8Ίόγγυ1
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µΠπ8¬όγγυ1J$e3188f5a-eb0f-4a03-8f30-01acf1279599
+m
+java:S1068"%Remove this unused "x" private field.(ΠΗρόÿÿÿÿ8Ίόγγυ1J$6e3ab0b3-3a22-402c-8f5f-2da06f072e38
+m
+java:S1068"%Remove this unused "y" private field.(Κ€Δψÿÿÿÿ8Ίόγγυ1J$5b5c2ad1-eeba-41eb-8c67-db910f54d928
