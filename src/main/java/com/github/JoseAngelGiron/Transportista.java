@@ -36,7 +36,7 @@ public abstract class Transportista {
         this.medida = medida;
     }
 
-    public abstract double presupuestar(Punto origen, Punto destino, double peso);
+    public abstract double presupuestar(Punto origen, Punto destino, double peso) throws EnvioNoDisponibleException;
 
     public class EnvioNoDisponibleException extends Exception {
 
