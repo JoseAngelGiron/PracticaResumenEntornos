@@ -15,3 +15,9 @@ k
 ;src/main/java/com/github/JoseAngelGiron/DistanciaCrane.java,d\f\dfca2464532cdd47b5ff5b5e74fa9757980c9e7b
 r
 Bsrc/main/java/com/github/JoseAngelGiron/TransportistaCarteros.java,a\a\aa4c1e41bd8487e3c00ef34c56c26c683b7a1a17
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+l
+<src/test/java/com/git/JoseAngelGiron/DistanciaCraneTest.java,3\b\3b2a25e649a83d054345c3fd8d0c51876f0b8a16
+s
+Csrc/test/java/com/git/JoseAngelGiron/TransportistaCarterosTest.java,1\4\145538c7264b813231768c0f388b7ecb84a5cf6e
