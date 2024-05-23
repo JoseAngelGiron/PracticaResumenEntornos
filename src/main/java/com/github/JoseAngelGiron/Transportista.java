@@ -1,6 +1,6 @@
 package com.github.JoseAngelGiron;
 
-public abstract class Transportista {
+public abstract class   Transportista {
 
     protected String nombre;
     protected String color;
@@ -8,6 +8,12 @@ public abstract class Transportista {
 
     public String getNombre() {
         return nombre;
+    }
+
+    public Transportista(String nombre, String color, Distancia medida) {
+        this.nombre = nombre;
+        this.color = color;
+        this.medida = medida;
     }
 
     public void setNombre(String nombre) {
