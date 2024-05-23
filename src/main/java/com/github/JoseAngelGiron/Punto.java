@@ -1,11 +1,16 @@
 package com.github.JoseAngelGiron;
 
 public class Punto {
-    private int x;
-    private int y;
+    private double x;
+    private double y;
+
+    public Punto(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
@@ -13,7 +18,7 @@ public class Punto {
         this.x = x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 

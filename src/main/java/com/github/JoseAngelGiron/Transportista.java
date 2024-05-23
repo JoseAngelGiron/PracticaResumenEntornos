@@ -1,6 +1,6 @@
 package com.github.JoseAngelGiron;
 
-public abstract class Transportista {
+public abstract class   Transportista {
 
     protected String nombre;
     protected String color;
