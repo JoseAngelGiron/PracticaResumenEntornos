@@ -3,7 +3,7 @@ package com.github.JoseAngelGiron;
 public class TransportistaFede extends Transportista {
 
 
-    public TransportistaFede(String nombre, String color, Distancia medida) {
+    public TransportistaFede() {
         super("Fede", "Marron", new DistanciaManhattan());
     }
 
@@ -14,7 +14,7 @@ public class TransportistaFede extends Transportista {
         if(distancia<10){
             coste =5;
         }else if (distancia >10 && distancia<100){
-            coste = peso * distancia /2;
+            coste = (peso * distancia) /2;
         }else {
             throw new EnvioNoDisponibleException(
                     "Lo sentimos, la distancia no esta soportada. Disculpe las molestias"
