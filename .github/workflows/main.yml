@@ -1,0 +1,35 @@
+# Nombre del action
+name: Tests automáticos
+
+# En qué eventos y ramas se activa
+on:
+  push:
+    branches: [ "JangelGiron-3" ]
+
+# Tareas
+jobs:
+  test: # Tarea "build"
+    permissions: write-all # Tiene permiso para escribir
+    runs-on: ubuntu-latest # Sistema operativo en el que se ejecuta el action
+
+    steps: # Pasos
+      - uses: actions/checkout@v4 # Hace un checkout del código
+      # Configura Java
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4 # Acción que configura el JDK
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+      - name: Verifica con Maven
+        run: mvn --batch-mode --update-snapshots verify --file pom.xml # Comando para testear el código con maven
+
+      # Genera un informe
+      - name: Report
+        uses: dorny/test-reporter@v1 # Acción que genera el informe
+        if: always() # Ejecutar siempre, aunque lo anterior falle.
+        with:
+          name: Informe de tests
+          path: target/surefire-reports/*.xml # Ruta para guardar los informes
+          reporter: java-junit
+          fail-on-error: true # Si hay error marcar como tarea fallida.
