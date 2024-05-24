@@ -20,6 +20,11 @@ public class TransportistaFedeTest {
     public static void setUpClass(){
         transportistaFede = new TransportistaFede();
     }
+    /**
+     * Prueba que verifica el cálculo del costo de envío cuando la distancia es mayor a 10 km y menor que 100 km.
+     *
+     * @throws Transportista.EnvioNoDisponibleException si la distancia no está soportada.
+     */
     @Test
     @DisplayName("Distancia mayor que 10")
     void testDistanciaMayorA10() throws Transportista.EnvioNoDisponibleException {
@@ -38,7 +43,9 @@ public class TransportistaFedeTest {
         assertTrue(costoCalculado >= 25, "El costo de envío debe ser mayor o igual a 25");
     }
 
-
+    /**
+     * Prueba que verifica si se lanza una excepción cuando el costo de envío es menor que 10.
+     */
     @Test
     @DisplayName("Costo de envío menor de 10")
     void testCostoMenorQue10() {
