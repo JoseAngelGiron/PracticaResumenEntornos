@@ -10,6 +10,7 @@ public class DistanciaManhattan extends Distancia {
      * @param origen El punto de origen.
      * @param destino El punto de destino.
      * @return La distancia Manhattan entre los dos puntos.
+     * hola (prueba de actions)
      */
     @Override
     public double medir(Punto origen, Punto destino) {
