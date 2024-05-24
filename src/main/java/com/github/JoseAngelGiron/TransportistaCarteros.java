@@ -1,6 +1,16 @@
 package com.github.JoseAngelGiron;
 
 public class TransportistaCarteros extends Transportista{
+
+    /**
+     * Calcula el costo de envío entre dos puntos en base a la distancia y el peso del envío.
+     *
+     * @param origen El punto de origen del envío.
+     * @param destino El punto de destino del envío.
+     * @param peso El peso del envío.
+     * @return El costo del envío calculado.
+     * @throws EnvioNoDisponibleException Si el costo de envío calculado es menor de 25.
+     */
     @Override
     public double presupuestar(Punto origen, Punto destino, double peso) throws EnvioNoDisponibleException {
 
