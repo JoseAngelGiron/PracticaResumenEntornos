@@ -1,0 +1,177 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > Transportista</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.github.JoseAngelGiron</a>
+</div>
+
+<h1>Coverage Summary for Class: Transportista (com.github.JoseAngelGiron)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Transportista</td>
+<td class="coverageStat">
+  <span class="percent">
+    14,3%
+  </span>
+  <span class="absValue">
+    (1/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    40%
+  </span>
+  <span class="absValue">
+    (4/10)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">Transportista$EnvioNoDisponibleException</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (2/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (6/12)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.github.JoseAngelGiron;
+&nbsp;
+&nbsp;public abstract class   Transportista {
+&nbsp;
+&nbsp;    protected String nombre;
+&nbsp;    protected String color;
+&nbsp;    protected Distancia medida;
+&nbsp;
+<b class="fc">&nbsp;    public Transportista(String nombre, String color, Distancia medida) {</b>
+<b class="fc">&nbsp;        this.nombre = nombre;</b>
+<b class="fc">&nbsp;        this.color = color;</b>
+<b class="fc">&nbsp;        this.medida = medida;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getNombre() {
+<b class="nc">&nbsp;        return nombre;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setNombre(String nombre) {
+<b class="nc">&nbsp;        this.nombre = nombre;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getColor() {
+<b class="nc">&nbsp;        return color;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setColor(String color) {
+<b class="nc">&nbsp;        this.color = color;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public Distancia getMedida() {
+<b class="nc">&nbsp;        return medida;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setMedida(Distancia medida) {
+<b class="nc">&nbsp;        this.medida = medida;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public abstract double presupuestar(Punto origen, Punto destino, double peso) throws EnvioNoDisponibleException;
+&nbsp;
+&nbsp;    public class EnvioNoDisponibleException extends Exception {
+&nbsp;
+<b class="fc">&nbsp;        public EnvioNoDisponibleException(String message) {</b>
+<b class="fc">&nbsp;            super(message);</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-05-24 14:07</div>
+</div>
+</body>
+</html>
