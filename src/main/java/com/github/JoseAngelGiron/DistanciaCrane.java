@@ -11,6 +11,8 @@ public class DistanciaCrane extends Distancia{
      * @param origen  el punto de origen
      * @param destino el punto de destino
      * @return la distancia de Crane entre el punto de origen y el punto de destino
+     *
+     * @Author Jose Angel Girón
      */
     @Override
     public double medir(Punto origen, Punto destino) {

@@ -10,6 +10,8 @@ public class TransportistaCarteros extends Transportista{
      * @param peso El peso del envío.
      * @return El costo del envío calculado.
      * @throws EnvioNoDisponibleException Si el costo de envío calculado es menor de 25.
+     *
+     * @Author Jose Angel Girón
      */
     @Override
     public double presupuestar(Punto origen, Punto destino, double peso) throws EnvioNoDisponibleException {
